@@ -1,0 +1,14 @@
+<%= form_for @user do |f| %>
+
+  <%= f.label :name, "What is your name?" %><br> 
+  <%= f.text_field :name%>
+  <br><br>
+
+  <%= f.label :email, "What is your email?" %><br> 
+  <%= f.text_field :email%>
+  <br><br>
+
+  <%= f.submit %>
+
+<% end %>
+<div align='left'><%= link_to 'Back to users list', users_path %></div>
